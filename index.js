@@ -151,9 +151,16 @@ const findHTTPsWithSlashesAndMore = /https{0,1}:\/\/.{1,}/g
  	returns [ 'https://www.google.com', 'http://google.com' ]
  	. => ADD any character 
  	{1, } => where at least one character exists
+
  */
 // console.log(twoURLS.match(findHTTPsWithSlashesAndMore))
 
 
+/*
+	NOTE: this will return 
+	http://egghead,io moreText
+	this is called 'greedy' because of the +
+*/
 const findHTTPsWithSlashesAndMoreSimpler = /https?:\/\/.+/g
 console.log(twoURLS.match(findHTTPsWithSlashesAndMoreSimpler))
+

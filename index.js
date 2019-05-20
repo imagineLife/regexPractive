@@ -16,11 +16,11 @@ let regex = new RegExp('is')
 
 //use the test method on the above
 //returns true
-console.log(`testing regex: ${regex.test(str)}`)
+// console.log(`testing regex: ${regex.test(str)}`)
 
 //Other regex method of creating
 let regexLiteral = /is/;
-console.log(`testing regexLiteral: ${regexLiteral.test(str)}`)
+// console.log(`testing regexLiteral: ${regexLiteral.test(str)}`)
 
 //get more info about regex math results
 /*
@@ -31,5 +31,17 @@ console.log(`testing regexLiteral: ${regexLiteral.test(str)}`)
   		input: 'What is this? This is a along string. Here, I\'ve added a bunch of stuff, to test regexp.' 
   	]
 */
-console.log('regexLiteral.exec =>')
-console.log(regexLiteral.exec(str))
+// console.log('regexLiteral.exec =>')
+// console.log(regexLiteral.exec(str))
+
+
+//regex flags
+// global
+
+let rglob = /is/g;
+console.log('rglob.exec(str)')
+console.log(rglob.exec(str))
+
+
+//notice running it twice outputs different result:
+

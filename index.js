@@ -86,6 +86,17 @@ const rind = /is/gi;
 	returns:
 	What xyz thxyz? xyz thxyz a long string? Thxyz xyz a along string. Here, I've added a bunch of stuff, to test regexp.
 */
-console.log('STRING.Replace');
-console.log(strCases.replace(rind, string => "xyz"))
+// console.log('STRING.Replace');
+// console.log(strCases.replace(rind, string => "xyz"))
 
+
+//string search
+//returns FIRST instance of matching regex pattern
+// console.log(strCases.search(rind))
+
+
+//find plain text pattern
+let plainTxt = `Cat sat flatly on the mat while he wore a hat.`
+let findCat = /Cat/
+
+console.log(plainTxt.match(findCat))

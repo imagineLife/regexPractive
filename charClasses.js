@@ -53,11 +53,12 @@ let rangeBegWithDigits = /[a-zA-Z0-9]at/g
 
 let funkyString = `Aeiou $100 55.5%`
 let searchFunky = /[a-zA-Z0-9]/g
-let searchFunkyShorthand = /\w/g
+let onlyLettersAndNumbers = /\w/g
 
 //the bove search strings return the same things...
 //returns [ 'A', 'e', 'i', 'o', 'u', '1', '0', '0', '5', '5', '5' ]
-console.log(funkyString.match(searchFunkyShorthand))
+// console.log(funkyString.match(onlyLettersAndNumbers))
 
-
-
+//match only digits
+let onlyDigits = /\d/g
+console.log(funkyString.match(onlyDigits))

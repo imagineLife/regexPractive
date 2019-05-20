@@ -137,4 +137,10 @@ const findHTTPs = /https{0,1}/g
 // console.log(twoURLS.match(findHTTPs))
 
 const findHTTPsWithColon = /https{0,1}:/g
-console.log(twoURLS.match(findHTTPsWithColon))
+// returns [ 'https:', 'http:', 'http:' ]
+// console.log(twoURLS.match(findHTTPsWithColon))
+
+const findHTTPsWithSlashes = /https{0,1}:\/\//g
+// returns [ 'https://', 'http://', 'http://' ]
+console.log(twoURLS.match(findHTTPsWithSlashes))
+

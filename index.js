@@ -22,3 +22,14 @@ console.log(`testing regex: ${regex.test(str)}`)
 let regexLiteral = /is/;
 console.log(`testing regexLiteral: ${regexLiteral.test(str)}`)
 
+//get more info about regex math results
+/*
+	returns
+	[ 
+		'is',
+  		index: 5,
+  		input: 'What is this? This is a along string. Here, I\'ve added a bunch of stuff, to test regexp.' 
+  	]
+*/
+console.log('regexLiteral.exec =>')
+console.log(regexLiteral.exec(str))

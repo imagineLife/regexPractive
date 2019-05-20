@@ -27,5 +27,9 @@ let rangeBeginning = /[a-z]at/g
 // console.log(plainTxt.match(rangeBeginning))
 
 let rangeBeginningCaps = /[a-zA-Z]at/g
-//returns [ 'sat', 'lat', 'mat', 'hat' ]
-console.log(capsText.match(rangeBeginningCaps))
+//returns [ 'Cat', 'sat', 'lat', 'Mat', 'hat' ]
+// console.log(capsText.match(rangeBeginningCaps))
+
+let rangeBeginningNoLetters = /[^a-zA-Z]at/g
+//returns [ 'Cat', 'sat', 'lat', 'Mat', 'hat' ]
+console.log(capsText.match(rangeBeginningNoLetters))

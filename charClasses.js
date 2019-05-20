@@ -61,4 +61,11 @@ let onlyLettersAndNumbers = /\w/g
 
 //match only digits
 let onlyDigits = /\d/g
-console.log(funkyString.match(onlyDigits))
+//returns [ '1', '0', '0', '5', '5', '5' ]
+// console.log(funkyString.match(onlyDigits))
+
+
+//match only whitespace
+let onlyWhiteSpace = /\s/g
+//returns [ ' ', ' ' ]
+console.log(funkyString.match(onlyWhiteSpace))

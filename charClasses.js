@@ -19,4 +19,8 @@ let exclusivePrePattern = /[Cm]at/g
 
 let restrictiveBeginning = /[^Cm]at/g
 //returns [ 'sat', 'lat', 'hat', '?at', '0at' ]
-console.log(plainTxt.match(restrictiveBeginning))
+// console.log(plainTxt.match(restrictiveBeginning))
+
+let rangeBeginning = /[a-z]at/g
+//returns [ 'sat', 'lat', 'mat', 'hat' ]
+console.log(plainTxt.match(rangeBeginning))

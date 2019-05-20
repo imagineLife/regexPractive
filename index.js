@@ -152,4 +152,8 @@ const findHTTPsWithSlashesAndMore = /https{0,1}:\/\/.{1,}/g
  	. => ADD any character 
  	{1, } => where at least one character exists
  */
-console.log(twoURLS.match(findHTTPsWithSlashesAndMore))
+// console.log(twoURLS.match(findHTTPsWithSlashesAndMore))
+
+
+const findHTTPsWithSlashesAndMoreSimpler = /https?:\/\/.+/g
+console.log(twoURLS.match(findHTTPsWithSlashesAndMoreSimpler))

@@ -135,3 +135,6 @@ http://google.com`
 //returns [ 'https', 'http', 'http' ]
 const findHTTPs = /https{0,1}/g
 // console.log(twoURLS.match(findHTTPs))
+
+const findHTTPsWithColon = /https{0,1}:/g
+console.log(twoURLS.match(findHTTPsWithColon))

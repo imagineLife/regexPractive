@@ -142,5 +142,14 @@ const findHTTPsWithColon = /https{0,1}:/g
 
 const findHTTPsWithSlashes = /https{0,1}:\/\//g
 // returns [ 'https://', 'http://', 'http://' ]
-console.log(twoURLS.match(findHTTPsWithSlashes))
+// console.log(twoURLS.match(findHTTPsWithSlashes))
 
+
+const findHTTPsWithSlashesAndMore = /https{0,1}:\/\/.{1,}/g
+/*
+	NOTE:
+ 	returns [ 'https://www.google.com', 'http://google.com' ]
+ 	. => ADD any character 
+ 	{1, } => where at least one character exists
+ */
+console.log(twoURLS.match(findHTTPsWithSlashesAndMore))

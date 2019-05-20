@@ -106,4 +106,14 @@ let findAt = /at/g
 //find all words that END in 'at'
 // returns [ 'Cat', 'sat', 'lat', 'mat', 'hat' ]
 let findEndInAt = /.at/g
-console.log(plainTxt.match(findEndInAt))
+// console.log(plainTxt.match(findEndInAt))
+
+
+//find repeating characters?!
+//returns [ 'aaaa' ]
+let strRep = `aaaaaa`
+let findRepAs = /aaaa/g
+// console.log(strRep.match(findRepAs))
+
+let findByCount = /a{5}/g
+console.log(strRep.match(findByCount))

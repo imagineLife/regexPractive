@@ -13,6 +13,7 @@ let prePattern = /.at/g
 
 
 //CHARACTER CLASS
+// [] in the string
 //optional characters willing to accept
 let exclusivePrePattern = /[Cm]at/g
 //returns [ 'Cat', 'mat' ]
@@ -68,4 +69,30 @@ let onlyDigits = /\d/g
 //match only whitespace
 let onlyWhiteSpace = /\s/g
 //returns [ ' ', ' ' ]
-console.log(funkyString.match(onlyWhiteSpace))
+// console.log(funkyString.match(onlyWhiteSpace))
+
+
+//match only whitespace && symbols, not letters or numbers
+let noLettersOrNumbers = /[^\w]/g
+//returns [ ' ', '$', ' ', '.', '%' ]
+// console.log(funkyString.match(noLettersOrNumbers))
+
+
+
+
+//shorthands of negated versions
+//negate alpha-numerics
+let shortHandNoAlphaNums = /[\W]/g
+//returns [ ' ', '$', ' ', '.', '%' ]
+// console.log(funkyString.match(shortHandNoAlphaNums))
+
+//negates digits
+let shortHandNoDigits = /[\D]/g
+//returns [ 'A', 'e', 'i', 'o', 'u', ' ', '$', ' ', '.', '%' ]
+// console.log(funkyString.match(shortHandNoDigits))
+
+
+//negates white-space
+let shortHandNoWhiteSpace = /[\S]/g
+//returns [ 'A', 'e', 'i', 'o', 'u', '$', '1', '0', '0', '5', '5', '.', '5', '%' ]
+console.log(funkyString.match(shortHandNoWhiteSpace))

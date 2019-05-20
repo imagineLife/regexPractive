@@ -78,4 +78,14 @@ const rind = /is/gi;
 //string methods work well with regex
 //MATCH
 //returns array of regex matches!!
-console.log(strCases.match(rind))
+// console.log(strCases.match(rind))
+
+
+//string replace
+/*
+	returns:
+	What xyz thxyz? xyz thxyz a long string? Thxyz xyz a along string. Here, I've added a bunch of stuff, to test regexp.
+*/
+console.log('STRING.Replace');
+console.log(strCases.replace(rind, string => "xyz"))
+

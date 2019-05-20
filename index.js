@@ -98,5 +98,6 @@ const rind = /is/gi;
 //find plain text pattern
 let plainTxt = `Cat sat flatly on the mat while he wore a hat.`
 let findCat = /Cat/
+let findAt = /at/g
 
-console.log(plainTxt.match(findCat))
+console.log(plainTxt.match(findAt))

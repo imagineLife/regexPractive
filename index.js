@@ -115,5 +115,23 @@ let strRep = `aaaaaa`
 let findRepAs = /aaaa/g
 // console.log(strRep.match(findRepAs))
 
+//Find-by-count
 let findByCount = /a{5}/g
-console.log(strRep.match(findByCount))
+// console.log(strRep.match(findByCount))
+
+
+//Find-by-count
+// comma is AT LEAST
+// nothing is infinity
+let findByCountTill = /a{5,}/g
+// console.log(strRep.match(findByCountTill))
+
+
+let twoURLS = `https://www.google.com
+NOT a web address
+http://
+http://google.com`
+//finds http OR/AND https
+//returns [ 'https', 'http', 'http' ]
+const findHTTPs = /https{0,1}/g
+// console.log(twoURLS.match(findHTTPs))

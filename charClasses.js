@@ -37,4 +37,27 @@ let rangeBeginningNoLetters = /[^a-zA-Z]at/g
 
 let rangeBegWithDigits = /[a-zA-Z0-9]at/g
 //returns [ 'Cat', 'sat', 'lat', 'Mat', 'hat', '0at' ]
-console.log(capsText.match(rangeBegWithDigits))
+// console.log(capsText.match(rangeBegWithDigits))
+
+
+
+
+
+
+
+/* 
+
+	shorthand charClasses
+
+*/
+
+let funkyString = `Aeiou $100 55.5%`
+let searchFunky = /[a-zA-Z0-9]/g
+let searchFunkyShorthand = /\w/g
+
+//the bove search strings return the same things...
+//returns [ 'A', 'e', 'i', 'o', 'u', '1', '0', '0', '5', '5', '5' ]
+console.log(funkyString.match(searchFunkyShorthand))
+
+
+

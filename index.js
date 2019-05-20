@@ -100,4 +100,10 @@ let plainTxt = `Cat sat flatly on the mat while he wore a hat.`
 let findCat = /Cat/
 let findAt = /at/g
 
-console.log(plainTxt.match(findAt))
+// console.log(plainTxt.match(findAt))
+
+
+//find all words that END in 'at'
+// returns [ 'Cat', 'sat', 'lat', 'mat', 'hat' ]
+let findEndInAt = /.at/g
+console.log(plainTxt.match(findEndInAt))

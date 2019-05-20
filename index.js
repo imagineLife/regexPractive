@@ -3,6 +3,7 @@
 
 //demo string
 const str = `What is this? This is a along string. Here, I've added a bunch of stuff, to test regexp.`
+const strCases = `What is this? Is this a long string? This is a along string. Here, I've added a bunch of stuff, to test regexp.`
 
 //search pattern
 let sp = 'is';
@@ -52,7 +53,15 @@ let rglob = /is/g;
 	[ 'is',
   index: 10,
   input: 'What is this? This is a along string. Here, I\'ve added a bunch of stuff, to test regexp.' ]
+
+  regex is state-aware.
 */
-console.log('rglob.exec(str) twice...')
-console.log(rglob.exec(str))
-console.log(rglob.exec(str))
+// console.log('rglob.exec(str) twice...')
+// console.log(rglob.exec(str))
+// console.log(rglob.exec(str))
+
+//regex flag 2 the i, ignore case
+const rind = /is/gi;
+console.log(rind.exec(strCases))
+console.log(rind.exec(strCases))
+console.log(rind.exec(strCases))

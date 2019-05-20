@@ -32,4 +32,9 @@ let rangeBeginningCaps = /[a-zA-Z]at/g
 
 let rangeBeginningNoLetters = /[^a-zA-Z]at/g
 //returns [ 'Cat', 'sat', 'lat', 'Mat', 'hat' ]
-console.log(capsText.match(rangeBeginningNoLetters))
+// console.log(capsText.match(rangeBeginningNoLetters))
+
+
+let rangeBegWithDigits = /[a-zA-Z0-9]at/g
+//returns [ 'Cat', 'sat', 'lat', 'Mat', 'hat', '0at' ]
+console.log(capsText.match(rangeBegWithDigits))

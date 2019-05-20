@@ -15,4 +15,8 @@ let prePattern = /.at/g
 //optional characters willing to accept
 let exclusivePrePattern = /[Cm]at/g
 //returns [ 'Cat', 'mat' ]
-console.log(plainTxt.match(exclusivePrePattern))
+// console.log(plainTxt.match(exclusivePrePattern))
+
+let restrictiveBeginning = /[^Cm]at/g
+//returns [ 'sat', 'lat', 'hat', '?at', '0at' ]
+console.log(plainTxt.match(restrictiveBeginning))

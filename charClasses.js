@@ -1,4 +1,5 @@
 let plainTxt = `Cat sat flatly on the mat while he wore a hat ?at 0at.`
+let capsText = `Cat sat flatly on the Mat while he wore a hat ?at 0at.`
 
 //match all 'at's
 let pattern = /at/g
@@ -23,4 +24,8 @@ let restrictiveBeginning = /[^Cm]at/g
 
 let rangeBeginning = /[a-z]at/g
 //returns [ 'sat', 'lat', 'mat', 'hat' ]
-console.log(plainTxt.match(rangeBeginning))
+// console.log(plainTxt.match(rangeBeginning))
+
+let rangeBeginningCaps = /[a-zA-Z]at/g
+//returns [ 'sat', 'lat', 'mat', 'hat' ]
+console.log(capsText.match(rangeBeginningCaps))

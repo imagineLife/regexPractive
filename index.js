@@ -39,9 +39,20 @@ let regexLiteral = /is/;
 // global
 
 let rglob = /is/g;
-console.log('rglob.exec(str)')
-console.log(rglob.exec(str))
+// console.log('rglob.exec(str)')
+// console.log(rglob.exec(str))
 
 
 //notice running it twice outputs different result:
-
+/*
+	Returns:
+	[ 'is',
+  index: 5,
+  input: 'What is this? This is a along string. Here, I\'ve added a bunch of stuff, to test regexp.' ]
+	[ 'is',
+  index: 10,
+  input: 'What is this? This is a along string. Here, I\'ve added a bunch of stuff, to test regexp.' ]
+*/
+console.log('rglob.exec(str) twice...')
+console.log(rglob.exec(str))
+console.log(rglob.exec(str))
